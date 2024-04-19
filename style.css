@@ -1,15 +1,40 @@
-.pacifico-regular {
-    font-family: "Pacifico";
-    font-weight: 100;
+.andika-regular {
+    font-family: "Andika", sans-serif;
+    font-weight: 400;
     font-style: normal;
   }
+  
+  .andika-regular-italic {
+    font-family: "Andika", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .andika-bold {
+    font-family: "Andika", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .andika-bold-italic {
+    font-family: "Andika", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
 
-.josefin-sans {
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-}
+  .amatic-sc-regular {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .amatic-sc-bold {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  
 
 *{
     margin: 0;
@@ -25,12 +50,8 @@ html{
 
 :root {
     --primary-color: #ffffff;
-    --secondary-color: #000000;
-    --tertiary-color: #FFFFFF;
-    --quad-color: #7899D4;
-    --heading-font: "Pacifico";
-    --body-font: "Josefin Sans";
-    --font-size-base: 16px;
+    --heading-font: "Amatic SC";
+    --body-font: "Andika";
 }
 
 body {
@@ -40,9 +61,36 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    color: var(--primary-color);
 }
 
+section{
+    
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+    border: #ffffff solid 1px;
+    margin-left: 80px;
+}
 
+/*****************************************  design Font **********/
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: 5.6rem;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: var(--body-font);
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5;
+}
+/*****************************************  design Sidebar *******/
 .sidebar {
     position: fixed;
     top: 0;
@@ -150,3 +198,13 @@ body {
     transition-delay: calc(.1s * var(--i));
 }
 
+/* ******************* design section home */
+
+.home{
+    text-align: center;
+   
+}
+
+.home h1{
+    font-family: var(--heading-font);
+}
