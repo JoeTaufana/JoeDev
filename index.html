@@ -46,36 +46,44 @@
                 </a>
             </li>
             <li class="listItem">
-                <a href="#">
+                <a href="#portfolio">
                     <i class='bx bx-photo-album'></i>
                     <span class="linkName" style="--i:4;">Portfolio</span>
                 </a>
             </li>
             <li class="listItem">
-                <a href="#">
+                <a href="#contact">
                     <i class='bx bxs-envelope'></i>
                     <span class="linkName" style="--i:5;">Contact</span>
                 </a>
             </li>         
         </ul>
     </nav>
+
+            <!-- design section home -->
+
     <section class="home" id="home">
         <h1 class="heading">future conceptrice et <br> développeuse d'application</h1>
-        <div class="homeContent">
+        <div class="homeContainer container">
             <p>Je suis à la recherche d'un stage de 6 mois le plus tôt possible. <br>
             Mon objectif est de renforcer mes compétences et d'en acquérir d'autres dans le développement.</p>
         </div>
+        
         <div class="socialMedia">
             <a href="www.linkedin.com/in/joelle-taufana"><i class='bx bxl-linkedin-square'></i></a>
             <a href="https://github.com/JoeTaufana"><i class='bx bxl-github'></i></a>
         </div>
+        
         <a href="document/JoelleTaufanaConceptriceDeveloppeuse.pdf" download="TAUFANA_JOELLE_DEVELOPPEUSE.pdf"
             class="btn">Mon CV</a>
+            
     </section>
+
+            <!-- design section about -->
     <section class="about" id="about">
-        <h1 class="heading">A propos de moi</h1>  
+        <h1 class="heading">A propos</h1>  
         
-        <div class="aboutContent">
+        <div class="aboutContent container">
             <div class="aboutItem">
               
             <p>En reconversion professionnelle, j’ai récemment suivi une formation intensive en Conception et Développement d’Applications (CDA), 
@@ -100,6 +108,8 @@
             </div>
         </div>     
     </section>
+
+            <!-- design section skills -->
     <section class="skills" id="skills">
         <h1 class="heading">Mes compétences</h1>
         <div class="skillsContent">
@@ -236,9 +246,102 @@
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Taufana Joëlle | Tout droits réservés</p>
+        <!-- design section portfolio -->
+
+    <section class="portfolio" id="portfolio">
+
+        <h1 class="heading">Mes Projets</h1>
+
+        <div class="portfolioContainer container">
+            <div class="portfolioBox">
+                <img src="img/tesPtitesMainsVertes.png" alt="">
+                <div class="portfolioLayer">
+                    <h3>Tes p'tites mains vertes</h3>
+                    <p>Projet réalisé en 2 jours, en équipe, lors d'un hackaton au profit de l'association.</p>
+                    <a href="https://tes-ptites-mains-vertes.vercel.app/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolioBox">
+                <img src="img/lilleDuPacifique.png" alt="">
+                <div class="portfolioLayer">
+                    <h3>Lille du Pacifique</h3>
+                    <p>Projet en cours qui sera présenté lors de la soutenance.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolioBox">
+                <img src="img/folifenuaWeb.png" alt="">
+                <div class="portfolioLayer">
+                    <h3>FolifenuaWeb</h3>
+                    <p>Portfolio</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- design section contact -->
+
+    <section class="contact" id="contact">
+        <h1 class="heading">Contact</h1>
+
+        <div class="container">
+
+            <div class="contactContent">
+                <h3>Contactez-moi directement</h3>
+                <p>
+                    <i class='bx bx-mail-send' ></i> <a href="mailto:adresse@email.com">taufanajoe@gmail.com</a>
+                </p>
+                <p>
+                    <i class='bx bxs-phone-outgoing'></i> <a href="tel:+33617202925">06.17.20.29.25</a>
+                </p>
+            </div>
+            
+            <div class="contactForm">
+                <form action="form">
+                    <div class="contactInfo">
+                        <input type="text" class="input" id="nom" placeholder="Votre nom" required>
+                        <label for="nom" class="label">Nom</label>
+                    </div>
+                    <div class="contactInfo">
+                        <input type="email" class="input" id="email" placeholder="Votre email">
+                        <label for="nom" class="label">Email</label>
+                    </div>
+                    <div class="message">
+                        <label for="message" class="messageLabel">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" class="input" required></textarea>
+                    </div>
+                    <div class="submit">
+                        <button type="submit" class="btn">Envoyer &rarr;</button>
+                    </div>
+                </form>
+            </div>
+            
+            
+        </div>
+
+    </section>
+
+    <!------------------------- design footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Joëlle Taufana &copy; 2024 | Tout droit réservé</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+
     </footer>
+
+    <!-- Scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- writting typed -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Custom js -->
     <script src="script.js"></script>
 
 </body>
