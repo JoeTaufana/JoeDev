@@ -54,7 +54,7 @@ ScrollReveal({
     delay: 200,
 });
 
-ScrollReveal().reveal('.home, .heading, .skillsContent, .portfolioBox', { origin: 'top' });
+ScrollReveal().reveal('.skillsContent, .portfolioBox', { origin: 'top' });
 ScrollReveal().reveal('.home a, aboutImg, .skillsExperience, .contactContent', { origin: 'bottom' });
 ScrollReveal().reveal('.socialMedia, .aboutItem, .skillsTechnology h2, .portfolioBox', { origin: 'left' });
 ScrollReveal().reveal('.skillsContainer, .contactForm', { origin: 'right' });
