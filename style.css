@@ -771,14 +771,16 @@ p{
     .footer{
         flex-direction: column-reverse;
     }
+    
+    .footer p{
+        text-align: right;
+
+    }
 }
 
 @media screen and (max-width: 375px){
     
     
 
-    .footer p{
-        text-align: right;
-
-    }
+    
 }
