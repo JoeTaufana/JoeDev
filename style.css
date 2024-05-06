@@ -108,6 +108,7 @@ h3 {
     font-weight: 600;
     font-style: normal;
     letter-spacing: 0.1rem;
+    text-transform: capitalize;
 }
 
 p{
@@ -381,6 +382,8 @@ p{
 #accordion {
     width: 100%;   
     background: var(--tertiary-color);
+    text-align: left;
+    
 }
 
 .accordionElement h3{
